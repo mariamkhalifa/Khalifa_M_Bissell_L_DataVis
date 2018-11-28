@@ -1,32 +1,65 @@
-import matplotlib.polyplot as plt
+import matplotlib.pyplot as plt
+import csv
 
-# bar chart 1
-# total medals bar chart
-countries = ["USA", "Canada", "Norway", "Finland", "Austria", "Sweden", "Germany", "Switzerland"]
-total_medals = [653, 625, 457, 434, 280, 433, 360, 285]
+canada = []
+usa = []
+categories = []
 
-plt.bar(countries, total_medals, label="Total Medals")
+with open('data/OlympicsWinter.csv') as csvfile:
+	reader = csv.reader(csvfile)
+	line_count = 0
 
-plt.xlabel("Total Medals")
-plt.ylabel("Country")
-plt.title("Olympics Winter Medals 1896 - 2014")
-plt.legend()
-plt.show()
+	for row in reader:
+		if line_count is 0:
+			categories.append(row)
+			line_count +=1 
 
-# bar chart 2
-# bronze, silver and medal Canada and USA
-total_canada = [107, 203, 315]
-medal_canada = ["Bronze", "Silver", "Gold"]
+		elif row[4] == "USA":
+			usa.append(row[7])
 
-total_usa = [167, 319, 169]
-medal_usa = ["Bronze", "Silver", "Gold"]
+		elif row[4] == "CAN":
+			canada.append(row[7])
+	line_count += 1
 
-plt.bar(total_canada, medal_canada, label="Medal Color Total for Canada", color="red")
-plt.bar(total_usa, medal_usa, label="Medal Color Total for USA", color="blue")
+print('total medals for Canada: ', len(canada))
+print('total medals for USA: ', len(usa))
 
-plt.xlabel("Medal Color")
+print('processed', line_count, 'row of data')
+
+country = ["Canada", "USA"]
+total_medals = [len(canada), len(usa)]
+
+plt.bar(country, total_medals)
 plt.ylabel("Total Medals")
-plt.title("Total Number of Each Medal Color Won By USA and Canada")
-plt.legend()
+plt.xlabel("Canada & USA")
 plt.show()
 
+ca_bronze = []
+ca_silver = []
+ca_gold = []
+usa_bronze = []
+usa_silver = []
+usa_gold = []
+
+for row in canada:
+	if row == "Bronze":
+		ca_bronze.append(row)
+	elif row == "Silver":
+		ca_silver.append(row)
+	elif row == "Gold":
+		ca_gold.append(row)
+
+for row in usa:
+	if row == "Bronze":
+		usa_bronze.append(row)
+	elif row == "Silver":
+		usa_silver.append(row)
+	elif row == "Gold":
+		usa_gold.append(row)
+
+print("total bronze medals for canada: ", len(ca_bronze))
+print("total silver medals for canada: ", len(ca_silver))
+print("total gold medals for canada: ", len(ca_gold))
+print("total bronze medals for usa: ", len(usa_bronze))
+print("total silver medals for usa: ", len(usa_silver))
+print("total gold medals for usa: ", len(usa_gold))
