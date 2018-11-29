@@ -2,14 +2,14 @@ import matplotlib.pyplot as plt
 
 # bar chart 1
 # total medals bar chart
-countries = ["USA", "Canada", "Norway", "Finland", "Austria", "Sweden", "Germany", "Switzerland"]
-total_medals = [653, 625, 457, 434, 280, 433, 360, 285]
+countries = ["USA", "Canada"]
+total_medals = [653, 625]
 
 plt.bar(countries, total_medals, label="Total Medals")
 
 plt.xlabel("Total Medals")
 plt.ylabel("Country")
-plt.title("Olympics Winter Medals 1896 - 2014")
+plt.title("Olympics Winter Medals Canada Vs USA")
 plt.legend()
 plt.show()
 
