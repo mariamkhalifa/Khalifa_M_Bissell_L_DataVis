@@ -78,7 +78,7 @@ plt.title("Canada Medals Won by Year")
 plt.show()
 
 # 7 simple plot
-# medals of Canada by years
+# medals of America by years
 total_m_us = [13, 14, 45, 16, 16, 30, 26, 27, 8, 7, 25, 10, 30, 9, 7, 14, 21, 33, 83, 53, 98, 65]
 
 plt.plot(years, total_m_us)
