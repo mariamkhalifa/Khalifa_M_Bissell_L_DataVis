@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*CSS Doc*/
+
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 
+{ 
+margin: 0; 
+padding: 0; 
+} 
+
+img 
+{ 
+border: none; 
+margin: 0; 
+padding: 0; 
+}
+
+body 
+{
+font-family: "Agency FB";
+font-size: 16px;
+color: white;
+}
+
+.hidden
+{
+	display: none;
+}
+
+#container
+{
+	width: 1000px;
+	margin: 0 auto;
+	background-color: black;
+}
+
+#header
+{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.mainContainer
+{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+
+/*.totalMedals
+{
+
+}*/
+
+#column1
+{
+	width: 500px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: red
+}
+
+.bsgReg
+{
+	width: 500px;
+	height: 150px;
+	text-align: center;
+	margin: 10px 0px 10px 0px;
+}
+
+.menWomCAN
+{
+	height: 150px;
+	text-align: center;
+}
+
+.canProgress
+{
+	height: 150px;
+	text-align: center;
+}
+
+#column2
+{
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: ;
+	background-color: blue;
+}
+
+.bsgScatter
+{
+	width: 500px;
+	height: 150px;
+	text-align: center;
+	margin: 10px 0px 10px 0px;
+}
+
+.bsgScatter h2
+{
+	color: red;
+}
+
+.menWomUSA
+{
+	height: 150px;
+	text-align: center;
+}
+
+.menWomUSA h2
+{
+	color: red;
+}
+
+.annualUSA
+{
+	height: 150px;
+	text-align: center;
+}
+
+.annualUSA h2
+{
+	color: red;
+}
