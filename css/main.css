@@ -64,20 +64,20 @@ color: white;
 .bsgReg
 {
 	width: 500px;
-	height: 150px;
+	height: 250px;
 	text-align: center;
 	margin: 10px 0px 10px 0px;
 }
 
 .menWomCAN
 {
-	height: 150px;
+	height: 250px;
 	text-align: center;
 }
 
 .canProgress
 {
-	height: 150px;
+	height: 250px;
 	text-align: center;
 }
 
@@ -93,7 +93,7 @@ color: white;
 .bsgScatter
 {
 	width: 500px;
-	height: 150px;
+	height: 250px;
 	text-align: center;
 	margin: 10px 0px 10px 0px;
 }
@@ -105,7 +105,7 @@ color: white;
 
 .menWomUSA
 {
-	height: 150px;
+	height: 250px;
 	text-align: center;
 }
 
@@ -116,7 +116,7 @@ color: white;
 
 .annualUSA
 {
-	height: 150px;
+	height: 250px;
 	text-align: center;
 }
 
